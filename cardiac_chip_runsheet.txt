@@ -4,15 +4,15 @@
 Material: SI
 Substrate: SIO2
 Target Pillar Height: 357.2 nm
-Critical Dimension (CD): 65.0 nm
+Critical Dimension (CD): 65.0 nm (Cleanroom DUV Design Rule; Pillar CD = 334.1 nm)
 Lithography Mask Layout: cardiac_sensor_mask.gds
 --------------------------------------------------------------------------------
 
-[Step 1] Substrate Surface Preparation
+[Step 1] Substrate Surface Preparation (Fused SiO2)
   Instructions:
-    * Piranha clean: H2SO4:H2O2 (3:1) at 120°C for 15 minutes (remove organics).
+    * Piranha clean: H2SO4:H2O2 (3:1) at 120°C for 15 minutes (remove organic residues).
     * Cascade DI water rinse until resistivity > 18.2 MOhm-cm.
-    * HF dip (1:50 BOE) for 15 seconds to strip native oxide, followed by quick dump rinse.
+    * Surface activation & hydration: Standard Clean SC-1 (NH4OH:H2O2:H2O 1:1:5 at 70°C for 10 min) to generate dense silanol (-SiOH) surface termination, followed by DI quick dump rinse.
     * Nitrogen spin-dry.
     * Dehydration bake: 180°C on hotplate for 10 minutes in vacuum.
 
@@ -62,6 +62,16 @@ Lithography Mask Layout: cardiac_sensor_mask.gds
     * Top-down CD-SEM inspection: Measure minimum width and pitch at 5 wafer locations (center, top, bottom, left, right).
     * Atomic Force Microscopy (AFM): Measure pillar height and surface roughness (Rq < 1.5 nm).
     * Optical spectrophotometer verification: Measure normal incidence reflection and transmission.
+
+[Step 6] Biochemical Surface Functionalization (Troponin-I Immunoassay Preparation)
+  Equipment: Biosafety Level 2 (BSL-2) Wet Chemistry Hood & Spin Coater
+  Instructions:
+    * Surface Silanization: Incubate metasurface in 2% (v/v) APTES in anhydrous ethanol for 1 hour to introduce amine (-NH2) functional groups.
+    * Ethanol ultrasonic wash (3 cycles) and cure at 110°C for 30 minutes under N2.
+    * Crosslinker Activation: Immerse in 2.5% Glutaraldehyde in PBS (pH 7.4) for 1 hour to create reactive aldehyde groups.
+    * Antibody Immobilization: Incubate with 20 ug/mL monoclonal anti-cardiac Troponin-I (anti-cTnI) antibody solution at 4°C for 12 hours.
+    * Surface Blocking: Incubate in 1% Bovine Serum Albumin (BSA) in PBS for 30 minutes to eliminate non-specific protein binding.
+    * Storage & QA: Store in PBS with 0.05% NaN3 at 4°C until microfluidic integration or clinical sample exposure.
 
 ================================================================================
 ✅ 100% FAB-READY SPECIFICATION CONFIRMED BY DRC CLEANROOM ENGINE

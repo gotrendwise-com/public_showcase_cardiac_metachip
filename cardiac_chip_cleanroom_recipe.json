@@ -3,19 +3,20 @@
   "material": "SI",
   "substrate": "SIO2",
   "target_thickness_nm": 357.2,
-  "critical_dimension_nm": 65.0,
+  "min_design_rule_cd_nm": 65.0,
+  "primary_feature_width_nm": 334.1,
   "mask_file": "cardiac_sensor_mask.gds",
   "process_steps": [
     {
       "step_number": 1,
-      "title": "Substrate Surface Preparation",
+      "title": "Substrate Surface Preparation (Fused SiO2)",
       "chamber": "Wet Bench Cleanroom Bay 1",
       "protocol": [
-        "Piranha clean: H2SO4:H2O2 (3:1) at 120\u00b0C for 15 minutes (remove organics).",
+        "Piranha clean: H2SO4:H2O2 (3:1) at 120°C for 15 minutes (remove organic residues).",
         "Cascade DI water rinse until resistivity > 18.2 MOhm-cm.",
-        "HF dip (1:50 BOE) for 15 seconds to strip native oxide, followed by quick dump rinse.",
+        "Surface activation & hydration: Standard Clean SC-1 (NH4OH:H2O2:H2O 1:1:5 at 70°C for 10 min) to generate dense silanol (-SiOH) surface termination, followed by DI quick dump rinse.",
         "Nitrogen spin-dry.",
-        "Dehydration bake: 180\u00b0C on hotplate for 10 minutes in vacuum."
+        "Dehydration bake: 180°C on hotplate for 10 minutes in vacuum."
       ]
     },
     {
@@ -40,9 +41,9 @@
       "parameters": {
         "bottom_antireflective_coating": "BARC ARC-29A (65 nm)",
         "spin_coat": "3000 rpm (resist thickness 350 nm)",
-        "pre_bake": "110\u00b0C for 90 seconds",
+        "pre_bake": "110°C for 90 seconds",
         "exposure_dose_mJ_cm2": 24.5,
-        "post_exposure_bake": "115\u00b0C for 90 seconds",
+        "post_exposure_bake": "115°C for 90 seconds",
         "developer": "TMAH 2.38% (MF-CD-26) puddle develop for 60 seconds"
       }
     },
@@ -62,7 +63,7 @@
         "electrode_temp_c": 15.0,
         "etch_rate_nm_min": 180.0,
         "nominal_etch_time_min": 1.98,
-        "sidewall_verticality": "89.8\u00b0 \u00b1 0.3\u00b0",
+        "sidewall_verticality": "89.8° ± 0.3°",
         "endpoint_detection": "Optical emission spectroscopy (OES) laser reflectometer"
       }
     },
@@ -72,10 +73,23 @@
       "equipment": "Downstream O2 Ashing & CD-SEM",
       "protocol": [
         "O2 plasma ash: 500W, 300 sccm O2, 200 mTorr for 10 minutes (remove fluorocarbon polymer veil).",
-        "Wet solvent clean: EKC-265 or Remover PG at 65\u00b0C for 20 minutes.",
+        "Wet solvent clean: EKC-265 or Remover PG at 65°C for 20 minutes.",
         "Top-down CD-SEM inspection: Measure minimum width and pitch at 5 wafer locations (center, top, bottom, left, right).",
         "Atomic Force Microscopy (AFM): Measure pillar height and surface roughness (Rq < 1.5 nm).",
         "Optical spectrophotometer verification: Measure normal incidence reflection and transmission."
+      ]
+    },
+    {
+      "step_number": 6,
+      "title": "Biochemical Surface Functionalization (Troponin-I Immunoassay Preparation)",
+      "equipment": "Biosafety Level 2 (BSL-2) Wet Chemistry Hood & Spin Coater",
+      "protocol": [
+        "Surface Silanization: Incubate metasurface in 2% (v/v) (3-Aminopropyl)triethoxysilane (APTES) in anhydrous ethanol for 1 hour to introduce amine (-NH2) functional groups.",
+        "Ethanol ultrasonic wash (3 cycles) and cure at 110°C for 30 minutes under N2.",
+        "Crosslinker Activation: Immerse in 2.5% Glutaraldehyde in PBS (pH 7.4) for 1 hour to create reactive aldehyde groups.",
+        "Antibody Immobilization: Incubate with 20 ug/mL monoclonal anti-cardiac Troponin-I (anti-cTnI) antibody solution at 4°C for 12 hours.",
+        "Surface Blocking: Incubate in 1% Bovine Serum Albumin (BSA) in PBS for 30 minutes to eliminate non-specific protein binding.",
+        "Storage & QA: Store in PBS with 0.05% NaN3 at 4°C until microfluidic integration or clinical sample exposure."
       ]
     }
   ]
