@@ -1,0 +1,82 @@
+{
+  "project_name": "SCOPE-NAR Metamaterial Nanofabrication",
+  "material": "SI",
+  "substrate": "SIO2",
+  "target_thickness_nm": 357.2,
+  "critical_dimension_nm": 65.0,
+  "mask_file": "cardiac_sensor_mask.gds",
+  "process_steps": [
+    {
+      "step_number": 1,
+      "title": "Substrate Surface Preparation",
+      "chamber": "Wet Bench Cleanroom Bay 1",
+      "protocol": [
+        "Piranha clean: H2SO4:H2O2 (3:1) at 120\u00b0C for 15 minutes (remove organics).",
+        "Cascade DI water rinse until resistivity > 18.2 MOhm-cm.",
+        "HF dip (1:50 BOE) for 15 seconds to strip native oxide, followed by quick dump rinse.",
+        "Nitrogen spin-dry.",
+        "Dehydration bake: 180\u00b0C on hotplate for 10 minutes in vacuum."
+      ]
+    },
+    {
+      "step_number": 2,
+      "title": "Polycrystalline Silicon Thin-Film Deposition",
+      "equipment": "LPCVD Horizontal Furnace",
+      "parameters": {
+        "temperature_celsius": 620.0,
+        "pressure_mtorr": 300.0,
+        "gas_sih4_sccm": 100.0,
+        "target_thickness_nm": 357.2,
+        "deposition_rate_nm_min": 10.0,
+        "process_time_min": 35.7,
+        "film_stress": "Low tensile (< 100 MPa)"
+      }
+    },
+    {
+      "step_number": 3,
+      "title": "Deep-UV (193nm) Photolithography",
+      "equipment": "Deep-UV Stepper (193nm ArF Immersion / Dry)",
+      "resist": "Shin-Etsu SEPR-401 DUV positive photoresist",
+      "parameters": {
+        "bottom_antireflective_coating": "BARC ARC-29A (65 nm)",
+        "spin_coat": "3000 rpm (resist thickness 350 nm)",
+        "pre_bake": "110\u00b0C for 90 seconds",
+        "exposure_dose_mJ_cm2": 24.5,
+        "post_exposure_bake": "115\u00b0C for 90 seconds",
+        "developer": "TMAH 2.38% (MF-CD-26) puddle develop for 60 seconds"
+      }
+    },
+    {
+      "step_number": 4,
+      "title": "Inductively Coupled Plasma Reactive Ion Etching (ICP-RIE)",
+      "equipment": "Oxford Instruments Plasmalab 100 ICP",
+      "parameters": {
+        "chemistry": "Pseudo-Bosch anisotropic cryo-cooled / pulsed fluorocarbon",
+        "gas_sf6_sccm": 25.0,
+        "gas_c4f8_sccm": 50.0,
+        "gas_o2_sccm": 3.0,
+        "chamber_pressure_mtorr": 12.0,
+        "icp_coil_power_w": 800.0,
+        "rf_platen_power_w": 65.0,
+        "dc_bias_v": -120.0,
+        "electrode_temp_c": 15.0,
+        "etch_rate_nm_min": 180.0,
+        "nominal_etch_time_min": 1.98,
+        "sidewall_verticality": "89.8\u00b0 \u00b1 0.3\u00b0",
+        "endpoint_detection": "Optical emission spectroscopy (OES) laser reflectometer"
+      }
+    },
+    {
+      "step_number": 5,
+      "title": "Resist Strip & Quality Metrology Checklist",
+      "equipment": "Downstream O2 Ashing & CD-SEM",
+      "protocol": [
+        "O2 plasma ash: 500W, 300 sccm O2, 200 mTorr for 10 minutes (remove fluorocarbon polymer veil).",
+        "Wet solvent clean: EKC-265 or Remover PG at 65\u00b0C for 20 minutes.",
+        "Top-down CD-SEM inspection: Measure minimum width and pitch at 5 wafer locations (center, top, bottom, left, right).",
+        "Atomic Force Microscopy (AFM): Measure pillar height and surface roughness (Rq < 1.5 nm).",
+        "Optical spectrophotometer verification: Measure normal incidence reflection and transmission."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+solid METASURFACE_UNIT_CELL
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -244.4000 -244.4000 -200.0000
+      vertex 244.4000 244.4000 -200.0000
+      vertex 244.4000 -244.4000 -200.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -244.4000 -244.4000 -200.0000
+      vertex -244.4000 244.4000 -200.0000
+      vertex 244.4000 244.4000 -200.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -244.4000 -244.4000 0.0000
+      vertex 244.4000 -244.4000 0.0000
+      vertex 244.4000 244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -244.4000 -244.4000 0.0000
+      vertex 244.4000 244.4000 0.0000
+      vertex -244.4000 244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -244.4000 -244.4000 -200.0000
+      vertex 244.4000 -244.4000 -200.0000
+      vertex 244.4000 -244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -244.4000 -244.4000 -200.0000
+      vertex 244.4000 -244.4000 0.0000
+      vertex -244.4000 -244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 244.4000 244.4000 -200.0000
+      vertex -244.4000 244.4000 -200.0000
+      vertex -244.4000 244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 244.4000 244.4000 -200.0000
+      vertex -244.4000 244.4000 0.0000
+      vertex 244.4000 244.4000 0.0000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -244.4000 244.4000 -200.0000
+      vertex -244.4000 -244.4000 -200.0000
+      vertex -244.4000 -244.4000 0.0000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -244.4000 244.4000 -200.0000
+      vertex -244.4000 -244.4000 0.0000
+      vertex -244.4000 244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 244.4000 -244.4000 -200.0000
+      vertex 244.4000 244.4000 -200.0000
+      vertex 244.4000 244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 244.4000 -244.4000 -200.0000
+      vertex 244.4000 244.4000 0.0000
+      vertex 244.4000 -244.4000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -167.0500 -167.0500 0.0000
+      vertex 167.0500 167.0500 0.0000
+      vertex 167.0500 -167.0500 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -167.0500 -167.0500 0.0000
+      vertex -167.0500 167.0500 0.0000
+      vertex 167.0500 167.0500 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -167.0500 -167.0500 357.2000
+      vertex 167.0500 -167.0500 357.2000
+      vertex 167.0500 167.0500 357.2000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -167.0500 -167.0500 357.2000
+      vertex 167.0500 167.0500 357.2000
+      vertex -167.0500 167.0500 357.2000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -167.0500 -167.0500 0.0000
+      vertex 167.0500 -167.0500 0.0000
+      vertex 167.0500 -167.0500 357.2000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -167.0500 -167.0500 0.0000
+      vertex 167.0500 -167.0500 357.2000
+      vertex -167.0500 -167.0500 357.2000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 167.0500 167.0500 0.0000
+      vertex -167.0500 167.0500 0.0000
+      vertex -167.0500 167.0500 357.2000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 167.0500 167.0500 0.0000
+      vertex -167.0500 167.0500 357.2000
+      vertex 167.0500 167.0500 357.2000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -167.0500 167.0500 0.0000
+      vertex -167.0500 -167.0500 0.0000
+      vertex -167.0500 -167.0500 357.2000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -167.0500 167.0500 0.0000
+      vertex -167.0500 -167.0500 357.2000
+      vertex -167.0500 167.0500 357.2000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 167.0500 -167.0500 0.0000
+      vertex 167.0500 167.0500 0.0000
+      vertex 167.0500 167.0500 357.2000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 167.0500 -167.0500 0.0000
+      vertex 167.0500 167.0500 357.2000
+      vertex 167.0500 -167.0500 357.2000
+    endloop
+  endfacet
+endsolid METASURFACE_UNIT_CELL

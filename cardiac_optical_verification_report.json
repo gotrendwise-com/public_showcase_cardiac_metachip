@@ -1,0 +1,32 @@
+{
+  "chip_specification": {
+    "project_title": "Non-Invasive Cardiovascular Biosensing Metasurface Chip",
+    "application": "Continuous Heart Rate (PPG), SpO2, and Acute Cardiac Troponin Biomarker Detection",
+    "wavelength_nm": 940.0,
+    "target_metric": "transmission",
+    "polarization": "TE",
+    "material": "si",
+    "substrate": "sio2",
+    "period_nm": 488.8,
+    "height_nm": 357.2,
+    "min_feature_size_nm": 65.0
+  },
+  "synthesized_nanostructure": {
+    "pitch_period_nm": 488.8,
+    "nanopillar_width_nm": 334.1,
+    "height_thickness_nm": 357.2,
+    "fill_fraction": 0.6835
+  },
+  "optical_performance": {
+    "resonance_wavelength_nm": 940.0,
+    "transmission_efficiency_pct": 95.21,
+    "reflection_pct": 5.79,
+    "absorption_pct": 0.0,
+    "energy_conservation_sum": 1.00996469
+  },
+  "manufacturing_and_biocompatibility": {
+    "drc_cleanroom_status": "100% COMPLIANT (DUV 65nm Ready)",
+    "causal_robustness_score": 100.0,
+    "photothermal_safety": "Temperature rise under 200.0 W/cm\u00b2 is 0.0\u00b0C (Peak: 25.0\u00b0C). Structure is thermally stable."
+  }
+}
